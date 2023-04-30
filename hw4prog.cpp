@@ -1,4 +1,4 @@
-#include <iostream>
+ #include <iostream>
 #include <cmath>
 #include <vector>
 
@@ -19,12 +19,15 @@ int main()
    w.push_back(0.0);
    p.push_back(0.0);
 
+
+
    for (int i = 0; i < j ; i++)
 	{
 	    float s;
 	    cin >> s;
 	    w.push_back(s);
 	}
+
    for (int i = 0; i < j ; i++)
 	{
 	    float s;
@@ -36,6 +39,7 @@ int main()
 	    p.push_back(s);
 	}
 
+
    pair< vector<float>, vector<int> > res_base = WWWWW(w, p, s, t);
  
    cout << "\nBase case : \n\n";
@@ -45,13 +49,14 @@ int main()
 	   cout << x << " ";
 	}
    cout << endl;
+    cout << "decision:`" << endl;
    for (int i = 0; i < res_base.first.size(); i++)
 	{
 	   cout << res_base.second[i] << " ";
 	}
    cout << endl;
 
-   pair< vector< vector<float> > , vector< vector<int> > > res_extra1 = WWWWW_1(w, p, s, t);
+/*   pair< vector< vector<float> > , vector< vector<int> > > res_extra1 = WWWWW_1(w, p, s, t);
  
    cout << "\nBonus 1 : \n\n";
    for (int k = 0; k <= 1; k++)
@@ -91,7 +96,7 @@ int main()
 		   cout << res_extra2.second[k][i] << " ";
 		}
 	}
-   cout << endl;
+   cout << endl;*/
 
 
    return 0;
