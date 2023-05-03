@@ -56,7 +56,7 @@ int main()
 	}
    cout << endl;
 
-/*   pair< vector< vector<float> > , vector< vector<int> > > res_extra1 = WWWWW_1(w, p, s, t);
+   pair< vector< vector<float> > , vector< vector<int> > > res_extra1 = WWWWW_1(w, p, s, t);
  
    cout << "\nBonus 1 : \n\n";
    for (int k = 0; k <= 1; k++)
@@ -77,7 +77,7 @@ int main()
 	}
    cout << endl;
 
-   cout << "\nBonus 2 : \n\n";
+/*   cout << "\nBonus 2 : \n\n";
    pair< vector< vector<float> > , vector< vector<int> > > res_extra2 = WWWWW_2(w, p, s, t);
  
    for (int k = 0; k <= 3; k++)
