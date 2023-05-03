@@ -77,7 +77,7 @@ int main()
 	}
    cout << endl;
 
-/*   cout << "\nBonus 2 : \n\n";
+   cout << "\nBonus 2 : \n\n";
    pair< vector< vector<float> > , vector< vector<int> > > res_extra2 = WWWWW_2(w, p, s, t);
  
    for (int k = 0; k <= 3; k++)
@@ -96,7 +96,7 @@ int main()
 		   cout << res_extra2.second[k][i] << " ";
 		}
 	}
-   cout << endl;*/
+   cout << endl;
 
 
    return 0;
