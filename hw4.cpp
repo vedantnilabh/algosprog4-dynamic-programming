@@ -18,9 +18,7 @@ pair<vector<float>, vector<int>> WWWWW(vector<float> w, vector<float> p, int s, 
             min = s;
         }
         // we are storing the expected value of the current question
-        //cout << w[i+1] << " " << p[i+1] << " " << dp[i+1] << " " << w[min] << endl;
         dp[i] = fmax(dp[i+1] * p[i+1] + (1 - p[i+1]) * w[min], w[i]);
-        //cout << dp[i] << endl;
         // if the expected value is eq1ual to the value of the question, we quit
         if (dp[i] == w[i]) {
             quit_decision[i] = 0;
@@ -55,7 +53,6 @@ pair<vector<vector<float>>, vector<vector<int>>> WWWWW_1(vector<float> w, vector
         }
 
         float p_get_easier = fmin(0.999f, 0.5f + p[i+1] / 2.0f);
-        //float p_get_easier = fmax(0.6f, p[i+1]);
 
         dp[0][i] = fmax(dp[0][i+1] * p[i+1] + (1 - p[i+1]) * w[min], w[i]);
 
